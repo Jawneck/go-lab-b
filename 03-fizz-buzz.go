@@ -5,6 +5,7 @@
 //Adapted from http://wiki.c2.com/?FizzBuzzTest
 package main
 
+//fmt is Go’s standard Input/Output library.
 import "fmt"
 
 func main() {
