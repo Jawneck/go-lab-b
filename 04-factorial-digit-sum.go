@@ -3,14 +3,23 @@
 
 package main
 //fmt is Go’s standard Input/Output library.
-import "fmt"
-
-//function that returns the sum of the digits.
-func sum(result string) int {
-
-	digits := strings.Split(result, "")
+func P20() int {
+    sum := 0;
+    digits := [200]int{};
+    digits[0] = 1;
+    for i := 2; i <= 100; i++ {
+    	for j := 0; j < len(digits); j++ {
+    		digits[j] *= i;
+    		if j > 0 && digits[j - 1] > 9 {
+    			digits[j] += int(digits[j - 1] / 10);
+    			digits[j - 1] %= 10;
+    		}
+    	}
+    }
+    for i := 0; i < len(digits); i++ {
+    	sum += digits[i];
+    }
+    return sum;
 }
 
-func main() {
-	fmt.Println(factorial(6))
-}
+
