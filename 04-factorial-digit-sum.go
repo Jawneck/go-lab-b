@@ -3,4 +3,16 @@
 
 package main
 //fmt is Go’s standard Input/Output library.
+import "fmt"
 
+func factorial(){
+
+}
+
+func sumDigits(){
+
+}
+
+func main(){
+
+}
