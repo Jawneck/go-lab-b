@@ -5,9 +5,13 @@ package main
 //fmt is Go’s standard Input/Output library.
 import "fmt"
 
-func factorial(){
-
-}
+func factorial(n uint64)(result uint64){
+		if (n > 0){
+				result = n * factorial(n-1)
+				return result
+		}
+		return 1
+}		
 
 func sumDigits(){
 
