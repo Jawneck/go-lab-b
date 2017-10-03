@@ -8,7 +8,28 @@ package main
 
 //fmt is Go’s standard Input/Output library.
 import "fmt"
+//rand implements psuedo-random number generation 
+import "math/rand"
+//time provides functionality for measuring and displaying time.
+import "time"
+
+
+
 
 func main() {
+	//Giving a random see so that the same value is not generated every time.
+	rand.Seed(time.Now().UnixNano())
+	//Generating a random int
+	randomNum := rand.Intn(100)
+	fmt.Println(randomNum)
+
+	//Setting the counter.
+	i := 1
+
+	for {
+
+
+
+	}
 
 }
