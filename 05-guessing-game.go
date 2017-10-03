@@ -21,14 +21,28 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 	//Generating a random int
 	randomNum := rand.Intn(100)
-	fmt.Println(randomNum)
 
 	//Setting the counter.
 	i := 1
 
 	for {
+		var guess int
+		fmt.Println("Guess a number between 1 and 100: ")
+		fmt.Scanln(&guess)
 
+		 if guess == randomNum{
+			fmt.Println("You have guessed the random number!")
+			fmt.Printf("\nThe number of times you have guessed is: %d", i)
+			return
+		} else if guess < randomNum{
+			fmt.Println("Guess higher!")
+		} else if guess > randomNum{
+			fmt.Println("Guess lower!")
+		}else{
+			fmt.Println("Please enter an integer value.")
+		}
 
+		i++
 
 	}
 
