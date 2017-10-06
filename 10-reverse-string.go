@@ -1,6 +1,6 @@
 //Write a function to reverse a string in go.
 //Author: Danielis Joniskis
-
+//Adapted from: https://www.dotnetperls.com/reverse-string-go
 package main
 
 //fmt is Go’s standard Input/Output library.

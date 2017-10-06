@@ -11,7 +11,7 @@ import "sort"
 
 func main(){
 
-	//Concatenating the two slices.
+	//Concatenating the two slices. https://stackoverflow.com/questions/16248241/concatenate-two-slices-in-go
 	slice := append([]int {1, 4, 6}, []int {2, 3, 5}...)
 
 	fmt.Println("The two integer lists concatenated:", slice)

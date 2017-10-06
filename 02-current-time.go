@@ -1,5 +1,5 @@
 //A program that prints the current time and date to the console.
-//Author: Danielis Joniskis#
+//Author: Danielis Joniskis
 //Adapted from https://tour.golang.org/welcome/4
 package main
 

@@ -8,6 +8,7 @@ import "fmt"
 import "math"
 
 //Newtons method is to approximate the square root of a number x by picking a starting point z.
+//https://tour.golang.org/flowcontrol/8
 func newtonMethod(x float64 ) float64{
 	if x == 0 {return 0}
 	z := 1.0

@@ -1,6 +1,7 @@
 //a function that tests whether a string is a palindrome. 
 //A palindrome is a string that reads the same in reverse, e.g. Civic.
 //Author: Danielis Joniskis
+//Adapted from: http://www.golangpro.com/2016/01/check-string-palindrome-go.html
 
 package main
 
